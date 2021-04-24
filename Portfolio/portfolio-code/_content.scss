@@ -1,0 +1,33 @@
+#projects {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+[class^="con"] {
+    background-color: $primary-white;
+    margin: 0px;
+}
+
+[class^="row"] {
+    min-height: 300px;
+    padding: 20px;
+}
+
+[class^="col"] {
+    padding: 15px;
+    background-color: $primary-color;
+    text-align: center;
+    border: 8px solid $primary-white;
+    border-radius: 15px;
+
+    a:link {
+        color: $primary-white;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: $primary-white;
+        text-decoration: none;
+    }
+}
