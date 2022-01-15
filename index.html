@@ -12,17 +12,18 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <script
+    <script src="https://kit.fontawesome.com/0e89233edc.js" crossorigin="anonymous"></script>
+    <!-- <script
       src="https://kit.fontawesome.com/0e89233edc.js"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
   </head>
   <body>
     <header class="header">
-      <h2><a href="#about">About</a></h2>
-      <h2><a href="#projects">Projects</a></h2>
-      <h2><a href="#skills-grid">Skills</a></h2>
-      <h2><a href="#contact">Contact</a></h2>
+      <h2 class="heading"><a href="#about">About</a></h2>
+      <h2 class="heading"><a href="#projects">Projects</a></h2>
+      <h2 class="heading"><a href="#skills-grid">Skills</a></h2>
+      <h2 class="heading"><a href="#contact">Contact</a></h2>
     </header>
 
     <div class="title">
@@ -38,8 +39,7 @@
       <p>
         I'm Helen, a Sheffield based Junior Web Developer. 
         I will soon be completing the software devlopment
-        course with _nology. Feel free to have a
-        look at what I have been working on...
+        course with _nology. Here is what I have been working on...
       </p>
     </div>
 
@@ -64,13 +64,21 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4 col-sm-6"><a href="#">Project 4</a></div>
-        <div class="col-md-4 col-sm-6"><a href="#">Project 5</a></div>
-        <div class="col-md-4 col-sm-6"><a href="#">Project 6</a></div>
+        <div class="col-md-4 col-sm-6">
+          <img src="images/morse.jpg">
+          <a href="#">Morse Code Translator</a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <img src="./images/beerapi.jpg">
+          <a href="#">Punk API</a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <img src="images/login.jpg">
+          <a href="#">Login page</a>
+        </div>
       </div>
     </div>
 
-    <!-- <h2 id="skills">Skills</h2> -->
     <div id="skills-grid">
     <div class="item1">
       <h3>Technical skills</h3>
@@ -91,7 +99,7 @@
           Bootstrap
         </li>
         <li>
-          UX/UI design
+          Jest/Cypress
         </li>
         <li>
           Git
@@ -129,16 +137,25 @@
     <div class="footer">
       <h2 id="contact">Contact</h2>
       <p>
-        If you would like to read more about my experience, feel free to
-        download my <a href="#CV">CV</a>
+        If you would like to hear more about my experience, 
+        please contact me through the options below
       </p>
       <div class="icons">
-        <a href="https://github.com/HCawley/nology-coursework" target="_blank"
-          ><i class="fab fa-github fa-5x"></i
+        <div class="faicons">
+        <a href="https://github.com/HCawley" target="_blank"
+          ><i class="fab fa-github fa-2x"></i
         ></a>
+        </div>
+        <div class="faicons">
         <a href="mailto:helencawley@icloud.com" target="_blank"
-          ><i class="far fa-envelope fa-5x"></i
+          ><i class="far fa-envelope fa-2x"></i
         ></a>
+        </div>
+        <div class="faicons">
+        <a href="https://www.linkedin.com/in/helen-cawley173" target="_blank"
+          ><i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        </div>
       </div>
     </div>
   </body>

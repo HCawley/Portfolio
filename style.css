@@ -10,7 +10,6 @@
   margin: 5px;
   display: flex;
   justify-content: flex-end;
-  align-items: space-between;
 }
 .header a:link {
   color: #726C6C;
@@ -21,11 +20,15 @@
   text-decoration: none;
 }
 
+.heading {
+  padding: 10px;
+}
+
 .title {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding: 300px 50px 0px;
+  padding: 200px 50px 0px;
 }
 .title h1 {
   font-size: 70px;
@@ -37,7 +40,7 @@
   justify-content: flex-end;
   background-color: #FED7C9;
   width: 100%;
-  height: 500px;
+  height: 200px;
 }
 .sub-heading :hover {
   color: white;
@@ -51,7 +54,7 @@
 
 #about {
   background-color: #FED7C9;
-  height: 350px;
+  height: 400px;
   padding: 20px;
 }
 #about p {
@@ -94,6 +97,7 @@
 #skills-grid {
   display: grid;
   grid-template-columns: 70% 30%;
+  padding: 100px 20px 50px;
 }
 
 #contact {
@@ -104,13 +108,22 @@
 
 .footer {
   background-color: #FED7C9;
-  height: 250px;
+  height: 280px;
   padding: 20px;
 }
 .footer p {
-  padding: 0px 10px;
+  padding: 0px 0px 0px 450px;
   display: flex;
   justify-content: flex-end;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.faicons {
+  padding: 10px;
 }
 
 img {
