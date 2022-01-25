@@ -1,6 +1,6 @@
 * {
   font-family: "roboto", sans-serif;
-  color: #726C6C;
+  /* color: #726C6C; */
   font-weight: lighter;
   margin: 0px;
 }
@@ -74,7 +74,7 @@
 }
 
 [class^=row] {
-  min-height: 200px;
+  min-height: 500px;
   padding: 20px;
 }
 
@@ -103,38 +103,38 @@
   perspective: 800px;
 }
 
-.card1 {
-  transform-style: preserve-3d;
-  transition: all 0.8s ease;
+.card {
   position: relative;
-  transform: rotateY(0deg);
-}
-
-.front {
-  backface-visibility: hidden;
   height: 100%;
   width: 100%;
-  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s ease;
   transform: rotateY(0deg);
+  /* backface-visibility: initial; */
+}
+
+.card.flipcard {
+  transform: rotateY(180deg);
+  background-color: #726C6C;
+  color: white;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* -webkit-backface-visibility: hidden; */
+  backface-visibility: hidden;
+  background-color: #726C6C;
+  color: white;
 }
 
 .back {
-  backface-visibility: hidden;
-  background-color: red;
+  /* background-color: #726C6C;
+  color: white; */
   transform: rotateY(180deg);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-
-.flipCard {
-  transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
-}
-
-.flipCard .back {
-  transform: rotateY(0deg);
-  -webkit-transform: rotateY(0deg);
+  text-align: center;
 }
 
 #skills-grid {
