@@ -101,21 +101,22 @@
 
 .cards {
   perspective: 800px;
+  /* -webkit-perspective: 800px; */
 }
 
 .card {
   position: relative;
   height: 100%;
   width: 100%;
+  /* backface-visibility: hidden; */
   transform-style: preserve-3d;
-  transition: transform 1s ease;
+  transition: 1s;
   transform: rotateY(0deg);
-  /* backface-visibility: initial; */
 }
 
 .card.flipcard {
   transform: rotateY(180deg);
-  background-color: #726C6C;
+  background: transparent;
   color: white;
 }
 
@@ -165,8 +166,9 @@
   justify-content: flex-end;
 }
 
-.faicons {
+.faicons ::before {
   padding: 10px;
+  color: #726C6C;
 }
 
 img {
