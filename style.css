@@ -40,7 +40,7 @@
   justify-content: flex-end;
   background-color: #FED7C9;
   width: 100%;
-  height: 200px;
+  height: 300px;
 }
 .sub-heading :hover {
   color: white;
@@ -54,7 +54,7 @@
 
 #about {
   background-color: #FED7C9;
-  height: 400px;
+  height: 500px;
   padding: 20px;
 }
 #about p {
@@ -85,13 +85,56 @@
   border: 8px solid white;
   border-radius: 15px;
 }
+
 [class^=col] a:link {
   color: white;
-  text-decoration: none;
 }
+
 [class^=col] a:visited {
   color: white;
   text-decoration: none;
+}
+
+.fas {
+  color: white;
+}
+
+.cards {
+  perspective: 800px;
+}
+
+.card1 {
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  position: relative;
+  transform: rotateY(0deg);
+}
+
+.front {
+  backface-visibility: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: rotateY(0deg);
+}
+
+.back {
+  backface-visibility: hidden;
+  background-color: red;
+  transform: rotateY(180deg);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.flipCard {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.flipCard .back {
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
 }
 
 #skills-grid {
@@ -128,6 +171,7 @@
 
 img {
   width: 100%;
-  object-fit: cover;
+  /* height: 70%; */
+  /* object-fit: cover; */
   aspect-ratio: 1 / 1;
 }
